@@ -10,7 +10,10 @@ var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
 
+
+
 var fight = function(enemyName) {
+    debugger;
     while (playerHealth > 0 && enemyHealth > 0) {
       // ask user if they'd liked to fight or run
       var promptFight = window.prompt('Would you like FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
@@ -91,6 +94,11 @@ var fight = function(enemyName) {
         window.alert("You have lost your robot in battle! Game Over!");
         break;
       }
+      
     }
+    
+
   };
+
+  
   startGame();
